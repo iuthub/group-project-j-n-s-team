@@ -58,7 +58,9 @@ Route::middleware(['is_admin'])->prefix('admin')->group(function () {
 
     //schools
     Route::get('/schools', [AdminController::class, 'schools'])->name('admin.schools');
-    Route::post('/schools', [AdminController::class, 'add_school'])->name('add-school');
+    Route::get('/schools/add', function (){return view('admin.add_school');})->name('add-school-form');
+
+    Route::post('/schools/add', [AdminController::class, 'add_school'])->name('add-school');
     Route::get('/schools/{school:id}/edit', [AdminController::class, 'edit_school_page'])->name('edit_school');
     Route::post('/schools/{school:id}/update', [AdminController::class, 'update_school'])->name('update_school');
     Route::delete('/schools/{school:id}/delete', [AdminController::class, 'delete_school'])->name('delete_school');

@@ -94,6 +94,7 @@
 
                             </table>
                         </div>
+                        <a href="{{route('add-school-form')}}" class="btn btn-default">Add</a>
                     </div>
                 </div>
             </div>
