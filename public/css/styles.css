@@ -1,0 +1,961 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body, .main {
+    height: 100%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.custom-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0.5rem 3em;
+    z-index: 10;
+    transition: background 300ms;
+}
+
+#navbar {
+    background: transparent;
+}
+
+.custom-nav .nav-item .nav-link {
+    color: white;
+    font-weight: 500;
+}
+
+.custom-nav .nav-item .nav-link:not(.custom-nav .nav-item.active .nav-link):hover {
+    color: rgb(253, 163, 128) !important;
+}
+
+.custom-nav .navbar-brand {
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+.custom-nav .nav-item.active .nav-link {
+    color: rgb(255, 114, 58);
+    font-weight: 700;
+}
+
+section.matches {
+    display: block;
+}
+
+section.home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(/images/home-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+section.home .content-block {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgba(255, 255, 255, 0.719);
+    width: 90%;
+}
+
+section.home .content-block .content {
+    font-size: 4.5em;
+    font-family: 'New Tegomin', serif;
+    line-height: 1.2;
+}
+
+section.home .content-block p.author {
+    text-align: right;
+    font-size: 4em;
+    color: rgb(0, 126, 0);
+    font-family: 'Orelega One', cursive;
+}
+
+section.home .content-block p.author::before {
+    content: "—";
+    margin-right: 5px;
+}
+
+section.about-us .content-block {
+    display: flex;
+}
+
+section.about-us .content-image {
+    width: 50%;
+    background: url(/public/images/old/section-abput.jpg) no-repeat;
+    background-size: cover;
+}
+
+section.about-us .content {
+    padding: 1em 3em;
+    font-size: 1.3em;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background: black;
+    color: white;
+}
+
+section.about-us .content p {
+    line-height: 2;
+}
+
+section.news .content-block {
+    display: flex;
+    overflow-y: scroll;
+}
+
+section.news .content-block::-webkit-scrollbar {
+    display: none;
+}
+
+section.news .news-show {
+    width: 70%;
+}
+
+section.news .news-show .inner {
+    padding: 1em;
+}
+
+section.news .news-show .news-title {
+    color: blue;
+    text-transform: uppercase;
+}
+
+section.news .news-show .news-image img {
+    width: 100%;
+}
+
+section.news .news-footer {
+    font-style: italic;
+    font-weight: 400;
+    color: grey;
+}
+
+section.news .tag-block .tag {
+    color: blue;
+    margin-right: 0.5rem;
+}
+
+section.news .tag-block .tag:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+section.news .news-list {
+    background: rgb(235, 235, 235);
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+section.news .news-list .inner {
+    display: flex;
+    flex-direction: column;
+}
+
+section.news .news-list .item-image {
+    width: 35%;
+    min-height: 100%;
+    background: url(/public/images/old/news3.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section.news .news-list .item-content {
+    width: 65%;
+    padding: 0.5rem 1rem;
+    background-color: white;
+}
+
+section.news .news-list .item-content .news-content {
+    font-size: 0.8em;
+}
+
+section.news .news-list .match-item {
+    display: flex;
+    padding: 5px;
+    cursor: pointer;
+}
+
+section.news .news-list .match-item .news-title {
+    color: blue;
+}
+
+section.news .news-list .match-item:hover .news-title {
+    text-decoration: underline;
+}
+
+section.tournaments .inner {
+    overflow-y: scroll;
+}
+
+section.tournaments .inner::-webkit-scrollbar {
+    display: none;
+}
+
+section.tournaments .header {
+    text-align: center;
+    margin: 1em 0;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+    font-family: 'Coda Caption', sans-serif;
+    color: green;
+}
+
+section.tournaments .tournament-list-block {
+    padding: 0.5em;
+    background: rgb(235, 235, 235);
+}
+
+section.tournaments .tournament-list-block {
+    display: flex;
+    flex-direction: column;
+}
+
+section.tournaments .list-item {
+    background: white;
+    margin-bottom: 0.5em;
+}
+
+section.tournaments .list-item .tournament {
+    display: flex;
+}
+
+section.tournaments .list-item .brand {
+    width: 20%;
+    min-height: 100%;
+    position: relative;
+}
+
+section.tournaments .list-item .brand img {
+    width: 100%;
+    height: 100%;
+}
+
+section.tournaments .list-item .brand span.edition {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 0.3em 0.5em;
+    color: white;
+    background: red;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 15px 0 0 0;
+}
+
+section.tournaments .list-item .content {
+    width: 60%;
+    padding: 1em 0;
+    border-right: 3px solid rgb(235, 235, 235);
+}
+
+section.tournaments .list-item .content .title {
+    text-transform: uppercase;
+    color: blue;
+    letter-spacing: 5px;
+    font-weight: bold;
+    font-family: 'Kanit', sans-serif;
+}
+
+section.tournaments .list-item .content .location {
+    font-size: 1.1em;
+    color: rgb(139, 139, 139);
+}
+
+section.tournaments .list-item .prize {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.tournaments .list-item .prize img {
+    width: 30%;
+    height: 80%;
+}
+
+section.tournaments .list-item .prize .value {
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: white;
+    background: green;
+}
+
+footer {
+    background: rgb(82, 81, 81);
+    padding: 2em 1em;
+}
+
+footer img {
+    width: 12%;
+}
+
+footer .inner {
+    position: relative;
+}
+
+footer .inner img:nth-of-type(1) {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: rotateY(180deg);
+}
+
+footer .inner img:nth-of-type(2) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+footer .content {
+    margin: auto;
+    width: 60%;
+    text-align: center;
+}
+
+footer .content h1 {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+footer .content p {
+    color: white;
+    font-size: 1.05em;
+    letter-spacing: 5px;
+}
+
+.login-modal .modal-dialog {
+    width: 35%;
+}
+
+.login-modal .modal-body, .signup-modal .modal-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-modal .modal-content {
+    min-height: 300px;
+}
+
+.login-modal .login-form {
+    width: 70%;
+}
+
+.login-modal .form-control {
+    display: inline-block;
+    width: auto;
+    margin-left: 0.5rem;
+}
+
+.signup-modal .modal-dialog {
+    width: 40%;
+}
+
+.signup-modal .signup-form {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.signup-modal .signup-form .form-group {
+    width: 45%;
+}
+
+/*******************/
+/**** Admin Page ***/
+/*******************/
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    background: white;
+    box-shadow: 1px 1px 10px black;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.sidebar::-webkit-scrollbar {
+    display: none;
+}
+
+.sidebar .navbar-brand {
+    text-transform: uppercase;
+    font-size: 1.7em;
+    font-weight: bold;
+    display: inline-block;
+    width: 100%;
+    color: white;
+    background: green;
+    padding: 0.5em;
+    transition: background 300ms;
+}
+
+.sidebar .navbar-brand:hover {
+    background: rgb(0, 95, 0);
+}
+
+.sidebar .menu-item .menu-link {
+    text-decoration: none;
+    color: green;
+    display: inline-block;
+    width: 100%;
+    padding: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 300ms;
+    letter-spacing: 3px;
+}
+
+.sidebar .menu-item .menu-link.active {
+    background: rgba(73, 255, 57, 0.678);
+    color: rgb(0, 59, 0);
+}
+
+.sidebar .menu-item .menu-link:hover {
+    background: rgba(73, 255, 57, 0.678);;
+}
+
+.admin-main {
+    padding-left: 20% !important;
+    overflow-x: hidden;
+    background: rgb(224, 224, 224);
+    height: 100%;
+}
+
+.admin-main::-webkit-scrollbar {
+    display: none;
+}
+
+.admin-main .main-inner > .header {
+    padding: 1em 2em;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    font-weight: bold;
+    font-size: 1.3em;
+    background-color: white;
+    color: green;
+    font-family: 'Righteous', cursive;
+    border-bottom: 2px solid rgb(224, 224, 224);
+}
+
+.admin-main .main-content-block {
+    padding: 1em;
+    background-color: white;
+}
+
+.main-content-block .header {
+    text-align: center;
+    color: blue;
+    letter-spacing: 5px;
+}
+
+.main-content-block .user-list,
+.main-content-block .player-list {
+    overflow-y: scroll;
+}
+
+.admin-main .main-content-block table {
+    width: 100%;
+    border: 2px solid rgb(194, 194, 194);
+}
+
+.admin-main .main-content-block table th.id {
+    width: 5%;
+}
+
+table.user-table th.username {
+    width: 45%;
+}
+
+table.user-table th.email {
+    width: 50%;
+}
+
+.admin-main .main-content-block table tr:nth-child(even) {
+    background: rgb(209, 208, 208);
+}
+
+.admin-main table th, .admin-main table td {
+    padding: 0.5em 1em;
+}
+
+table td.delete:hover > * {
+    color: red;
+}
+
+table td.update:hover > * {
+    color: green;
+}
+
+.user-list .entry-delete-modal {
+    width: 30%;
+    padding: 0.5em 1em;
+    border: 2px solid rgb(105, 104, 104);
+    border-radius: 10px;
+    position: absolute;
+    background: white;
+    display: none;
+}
+
+.user-list .entry-delete-modal .control-btns {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.update-player-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.update-player-form .form-group {
+    width: 45%;
+}
+
+.update-player-form button {
+    align-self: center;
+}
+
+.navbar-nav .nav-item {
+    cursor: pointer !important;
+}
+
+
+/******************/
+/*** User Page ****/
+/******************/
+
+.user-main {
+    background: rgb(235, 235, 235);
+    min-height: 100%;
+}
+
+.user-main .header > .inner {
+    padding: 0.5em;
+    background: rgb(0, 71, 0);
+    display: flex;
+    color: white
+}
+
+.user-main .header > .inner h1 {
+    font-size: 2.3em;
+    text-shadow: 1px 0 1px white, 0px 1px 1px white, -1px 0px 1px white, 0px -1px 1px white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.user-main .header .inner h1 {
+    flex-grow: 10;
+    padding: 0.3em;
+}
+
+.user-main .header .balance-indicator {
+    padding: 0.5rem;
+    font-size: 1.4em;
+}
+
+.user-main .header .balance-indicator .inner {
+    margin-left: auto;
+    background: rgb(0, 185, 0);
+    color: white;
+    padding: 0.6em 0.5em;
+    border-radius: 10px;
+    position: relative;
+}
+
+.user-main .header .balance-indicator .inner .add {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 10px 0 10px 0;
+    border: none;
+    outline: none;
+    background: red;
+    color: white;
+}
+
+.user-main .header .nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-main .header .balance-indicator {
+    flex-grow: 2;
+}
+
+.fill-balance-modal .modal-dialog {
+    width: 20%;
+}
+
+.fill-balance-form .form-control {
+    width: 70%;
+    display: inline-block;
+}
+
+.user-favorite-players > .header,
+.user-bet-history > .header,
+.user-active-bets > .header {
+    text-align: center;
+    padding: 0.5em 0;
+    font-size: 1.5em;
+    font-weight: bold;
+    border: 5px solid rgb(236, 236, 236);
+    background: green;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.user-favorite-players .list-block {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.user-favorite-players .list-block .match-item {
+    padding: 5px;
+    width: 10%;
+}
+
+.user-favorite-players .list-block table tr td:first-child {
+    color: grey;
+    font-style: italic;
+}
+
+.card-title {
+    color: rgb(0, 59, 0)
+}
+
+.user-favorite-players .list-block table tr td:last-child {
+    color: grey;
+}
+
+.card .favorite-btn {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+
+.user-active-bets .list-block,
+.user-bet-history .list-block {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.user-active-bets .list-block .match-item,
+.user-bet-history .list-block .match-item {
+    width: 50%;
+    padding: 5px;
+}
+
+.user-active-bets .list-block .match-item .bet-card,
+.user-bet-history .list-block .match-item .bet-card {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background: white;
+}
+
+.user-active-bets .list-block .match-item .header,
+.user-bet-history .list-block .match-item .header {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 3px solid rgb(235, 235, 235);
+}
+
+.user-active-bets .list-block .match-item .header .block,
+.user-bet-history .list-block .match-item .header .block {
+    display: flex;
+    align-items: center;
+    padding: 0.5em;
+}
+
+.user-active-bets .list-block .match-item .header .block p,
+.user-bet-history .list-block .match-item .header .block p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.user-active-bets .list-block .match-item img,
+.user-bet-history .list-block .match-item img {
+    width: 70px;
+    max-width: 80px;
+    border-radius: 50%;
+}
+
+.user-active-bets .list-block .match-item .block-vs {
+    display: flex;
+    align-items: center;
+}
+
+.user-active-bets .list-block .match-item .block-vs img {
+    width: 50px;
+}
+
+.bet-card table td {
+    color: grey;
+}
+
+/*************/
+/*** Bets ****/
+/*************/
+.bets-main {
+    background: rgb(235, 235, 235);
+    min-height: 100%;
+}
+
+.bets-main .header > .inner {
+    padding: 0.5em;
+    background: rgb(0, 71, 0);
+    display: flex;
+    color: white
+}
+
+.bets-main .header > .inner h1 {
+    font-size: 2.3em;
+    text-shadow: 1px 0 1px white, 0px 1px 1px white, -1px 0px 1px white, 0px -1px 1px white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.bets-main .header .inner h1 {
+    flex-grow: 10;
+    padding: 0.3em;
+}
+
+.bets-main .header .nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bets-main .match-card {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}
+
+.bets-main .match-card .header {
+    display: flex;
+    justify-content: space-around;
+}
+
+.bets-main .match-card .header .block {
+    display: flex;
+    align-items: center;
+    padding: 0.5em;
+}
+
+.bets-main .match-card .header .block p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.bets-main img {
+    width: 170px;
+    max-width: 170px;
+    border-radius: 50%;
+}
+
+.bets-main .block-vs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bets-main .block-vs img {
+    width: 70px;
+}
+
+.match-card .bet-btn {
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+
+/************/
+/** Players */
+/************/
+
+.players-main {
+    background: rgb(235, 235, 235);
+    min-height: 100%;
+}
+
+.players-main .header > .inner {
+    padding: 0.5em;
+    background: rgb(0, 71, 0);
+    display: flex;
+    color: white
+}
+
+.players-main .header > .inner h1 {
+    font-size: 2.3em;
+    text-shadow: 1px 0 1px white, 0px 1px 1px white, -1px 0px 1px white, 0px -1px 1px white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.players-main .header .inner h1 {
+    flex-grow: 10;
+    padding: 0.3em;
+}
+
+.players-main .header .nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section.players .list-block {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.players .list-block .match-item {
+    padding: 5px;
+    width: 10%;
+}
+
+section.players .list-block table tr td:first-child {
+    color: grey;
+    font-style: italic;
+}
+
+.card-title {
+    color: rgb(0, 59, 0)
+}
+
+section.players .list-block table tr td:last-child {
+    color: grey;
+}
+
+.card .favorite-btn {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+
+
+/***********/
+/** Matchs ***/
+/***********/
+.match-main {
+    background: rgb(235, 235, 235);
+    min-height: 100%;
+}
+
+.match-main .header > .inner {
+    padding: 0.5em;
+    background: rgb(0, 71, 0);
+    display: flex;
+    color: white
+}
+
+.match-main .header > .inner h1 {
+    font-size: 2.3em;
+    text-shadow: 1px 0 1px white, 0px 1px 1px white, -1px 0px 1px white, 0px -1px 1px white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.match-main .header .inner h1 {
+    flex-grow: 10;
+    padding: 0.3em;
+}
+
+.match-main .header .nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section.match-list .list-block {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.match-list .list-block .match-item {
+    width: 33.33%;
+    padding: 5px;
+    display: block;
+}
+
+
+section.match-list .list-block .match-item .match-card {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background: white;
+}
+
+section.match-list .list-block .match-item .header {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 3px solid rgb(235, 235, 235);
+}
+
+section.match-list .list-block .match-item .header .block {
+    display: flex;
+    align-items: center;
+    padding: 0.5em;
+}
+
+section.match-list .list-block .match-item .header .block p {
+    margin: 0;
+    font-weight: bold;
+}
+
+section.match-list .list-block .match-item img {
+    width: 70px;
+    max-width: 80px;
+    border-radius: 50%;
+}
+
+section.match-list .list-block .match-item .block-vs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.match-card .bet-btn {
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
