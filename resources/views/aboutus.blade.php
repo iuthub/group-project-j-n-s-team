@@ -22,8 +22,8 @@ About us
                             </div>
                             <div class="col-12 col-xl-9">
                                 <p class="h4">
-                                    This, <strong>MySchool</strong> website is built by for IP project . This web-site consists of 7 sections as see.
-                                        And som datas about schools are really collected and combined.
+                                    This, <strong>MySchool</strong> website is built to help you with your school applications .
+                                        That's all :)
                                 </p>
                             </div>
                         </div>
@@ -68,8 +68,8 @@ About us
                                 <div class="counter-box">
                                     <i class="fas fa-info-circle fa-3x rounded-circle" style="color: #6a6a6b"></i>
                                     <div class="counter-num h5">
-                                        Get inforation about <br>
-                                        skillfull teachers
+                                        Get information about <br>
+                                        skillful teachers
                                     </div>
                                 </div>
                             </div>
