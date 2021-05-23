@@ -58,39 +58,11 @@
                 <li>
                     <a href="#" class="nav-item4">Subjects</a>
                     <ul class="nav-dropdown">
-                        <li>
-                            <a href="{{route('class', 1)}}">1th class</a>
-                        </li>
-                        <li>
-                            <a href="{{route('class', 2)}}">2th class</a>
-                        </li>
-                        <li>
-                            <a href="{{route('class', 3)}}">3th class</a>
-                        </li>
-                        <li>
-                            <a href="{{route('class', 4)}}">4th class</a>
-                        </li>
-                        <li>
-                            <a href="{{route('class', 5)}}">5th class</a>
-                        </li>
-                        <li>
-                            <a href="{{route('class', 6)}}">6th class</a>
-                        </li>
-                        <li>
-                            <a href="{{route('class', 7)}}">7th class</a>
-                        </li>
-                        <li>
-                            <a href="{{route('class', 8)}}">8th class</a>
-                        </li>
-                        <li>
-                            <a href="{{route('class', 9)}}">9th class</a>
-                        </li>
-                        <li>
-                            <a href="{{route('class', 10)}}">10th class</a>
-                        </li>
-                        <li>
-                            <a href="{{route('class', 11)}}">11th class</a>
-                        </li>
+                        @for($i = 6; $i<12; $i++)
+                            <li>
+                                <a href="{{route('class', $i)}}"> Grade {{$i}}</a>
+                            </li>
+                        @endfor
                     </ul>
                 </li>
                 <li>

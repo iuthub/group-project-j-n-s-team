@@ -1,7 +1,7 @@
 @extends('layouts.admin-dashboard')
 
 @section('title')
-    Online Apply
+    Apply Online
 @endsection
 @section('usertitle')
     Online application
@@ -16,7 +16,7 @@
 
                     <div class="row align-items-center">
                         <div class="col mt-0 p-2">
-                            <h1 style="color: #fff; font-size:4vw; text-align:center">Fill the Apply form.</h1>
+                            <h1 style="color: #fff; font-size:4vw; text-align:center">Edit school</h1>
                         </div>
                     </div>
 

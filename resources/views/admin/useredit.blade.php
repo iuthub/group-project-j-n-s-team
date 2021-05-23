@@ -13,6 +13,11 @@
     <form action="{{route('userupdate', $data->id)}}" method="post">
         @csrf
 
+        <div class="row align-items-center">
+            <div class="col mt-0 p-2">
+                <h1 style="color: orange; font-size:4vw; text-align:center">Edit user</h1>
+            </div>
+        </div>
 
         <div class="row align-items-center">
             <div class="col mt-4 text-center">
@@ -87,7 +92,7 @@
         </div>
 
 
-        <div class="row align-items-center">
+        <div class="row align-content-lg-start">
             <div class="col mt-4 text-center">
                 <button class="btn-primary" type="submit"
                         style="height:7vh; width: 50%; border-radius:9px; border:1px solid black; background-color: #00f320;">
@@ -96,8 +101,13 @@
             </div>
         </div>
 
-
     </form>
+
+    <div class="row align-content-lg-start">
+        <div class="col mt-4 text-center">
+            <a href="{{ route('admin.list') }}" class="btn-default"> Cancel</a>
+        </div>
+    </div>
 
 
 @endsection

@@ -4,7 +4,7 @@
     Admin Page
 @endsection
 @section('admintitle')
-    Edit users
+    Admin - Users
 @endsection
 @section('content')
     <div class="content">

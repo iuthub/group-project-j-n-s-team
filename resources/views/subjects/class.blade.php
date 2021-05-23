@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section("title")
-    First Class Subjects
+    Subjects
 @endsection
 
 @section('content')
@@ -10,7 +10,7 @@
     {{-- Title --}}
     <div>
         <h1 class="h3 text-center pt-3" style="color: rgb(0, 0, 0); font-family:'Comic Sans Ms'; font-weight:700;">
-            {{$subjects[0] -> grade}} class Subjects
+            {{$subjects[0] -> grade}} grade subjects
         </h1>
     </div>
     <div class="container">

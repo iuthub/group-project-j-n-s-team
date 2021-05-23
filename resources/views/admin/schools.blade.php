@@ -4,7 +4,7 @@
     Admin Page
 @endsection
 @section('admintitle')
-    Edit schools
+    Admin - Schools
 @endsection
 @section('content')
     <div class="content">
