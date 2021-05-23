@@ -94,6 +94,8 @@ Route::prefix('subjects')->group(function () {
 
 // About us
 Route::get('/aboutus', [HomeController::class, 'aboutus'])->name('aboutus');
+// About us
+Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
 
 
 //Authentication
