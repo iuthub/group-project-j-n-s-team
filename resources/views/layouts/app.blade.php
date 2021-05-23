@@ -59,19 +59,19 @@
                     <a href="#" class="nav-item4">Subjects</a>
                     <ul class="nav-dropdown">
                         <li>
-                            <a href="{{route('class', 6)}}">1th class</a>
+                            <a href="{{route('class', 1)}}">1th class</a>
                         </li>
                         <li>
-                            <a href="{{route('class', 7)}}">2th class</a>
+                            <a href="{{route('class', 2)}}">2th class</a>
                         </li>
                         <li>
-                            <a href="{{route('class', 8)}}">3th class</a>
+                            <a href="{{route('class', 3)}}">3th class</a>
                         </li>
                         <li>
-                            <a href="{{route('class', 9)}}">4th class</a>
+                            <a href="{{route('class', 4)}}">4th class</a>
                         </li>
                         <li>
-                            <a href="{{route('class', 10)}}">5th class</a>
+                            <a href="{{route('class', 5)}}">5th class</a>
                         </li>
                         <li>
                             <a href="{{route('class', 6)}}">6th class</a>
