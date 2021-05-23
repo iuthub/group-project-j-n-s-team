@@ -81,6 +81,9 @@
                 <li>
                     <a href="{{route('aboutus')}}" class="nav-item5">About us</a>
                 </li>
+                <li>
+                    <a href="{{route('contact')}}" class="nav-item5">Contact</a>
+                </li>
                 @auth
                     <li>
                         <a href="#" class="nav-item5">{{auth()->user()->name}}</a>
