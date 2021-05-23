@@ -75,6 +75,47 @@ About us
                             </div>
                         </div>
                     </div>
+                    <div class="content">
+                        <div style="background-color: rgb(236, 234, 234);font-family:'Nunito', sans-serif; font-weight:700;">
+                        <table style="position: relative;">
+                        <th>
+                            <h2 style="padding: 0px 0px 0px 20px;text-decoration: underline;">Contact of creators</h2> 
+                        </th>
+                        <tr>
+                            <th style="text-align: left; padding: 5px 5px 5px 10px;">NAME:</th>
+                            <th style="text-align: left; padding: 5px 5px 5px 5px;">EMAIL:</th>
+                            <th style="text-align: left; padding: 5px 5px 5px 5px;">TEL:</th>
+                            <th style="text-align: left; padding: 5px 5px 5px 5px;">ADDRESS:</th>
+                            </tr>
+                        <tr>
+                            <th style="text-align: left; padding: 5px 5px 5px 25px;">Nodirbek Azizov</th>
+                            <th style="text-align: left; padding: 5px 5px 5px 20px;">azizovnodirbek1999@gmail.com</th>
+                            <th style="text-align: left; padding: 5px 5px 5px 20px;">+998 99 880 39 96</th>
+                            <th style="text-align: left; padding: 5px 5px 5px 20px;"> 8-8a, Qoziguzar, Uchtepa district</th>
+                        </tr>
+                        <tr>
+                            <th style="text-align: left; padding: 5px 5px 5px 25px;">Abdullaev Jaloliddin</th>
+                            <th style="text-align: left; padding: 5px 5px 5px 20px;">j.abdullaev@student.inha.uz</th>
+                            <th style="text-align: left; padding: 5px 5px 5px 20px;">+998 99 452 23 99</th>
+                            <th style="text-align: left; padding: 5px 5px 5px 20px;"> 1-street, Mirobod</th>
+                            </tr>
+                        <tr>
+                            <th style="text-align: left; padding: 5px 5px 5px 25px;">Abdullajonov Sherzod</th>
+                            <th style="text-align: left; padding: 5px 5px 5px 20px;">s.abdullajonov@student.inha.uz</th>
+                            <th style="text-align: left; padding: 5px 5px 5px 20px;">+998 99 951 21 71</th>
+                            <th style="text-align: left; padding: 5px 5px 5px 20px;">Яхъя Гулямова street, Mirzo Ulugbek district</th>
+                        </tr>
+                        <tr>
+                            <th style="text-align: left; padding: 5px 5px 5px 25px;">Farrukh Koraev</th>
+                            <th style="text-align: left; padding: 5px 5px 5px 20px;">f.koraev@student.inha.uz</th>
+                            <th style="text-align: left; padding: 5px 5px 5px 20px;">+998 97 714 14 14</th>
+                            <th style="text-align: left; padding: 5px 5px 5px 20px;">Яхъя Гулямова street, Mirzo Ulugbek district</th>
+                        </tr>
+                        </table>
+                            <hr style="width: 60%;">
+                            <h4 style="text-align: center; padding: 10px; opacity: 70%;">ADDRESS CAN BE USED IN CASE OF FACE TO FACE TALK!</h4>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
